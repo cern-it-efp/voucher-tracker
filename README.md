@@ -1,6 +1,4 @@
-===========================
-Voucher Tracker - CERN
-===========================
+# Voucher Tracker - CERN
 
 Tool to keep track of cloud vouchers.
 
