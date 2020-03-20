@@ -1,0 +1,10 @@
+pip3 install --upgrade google-cloud-resource-manager
+pip3 install azure-cli
+pip3 install google-cloud
+pip3 install --upgrade google-cloud-bigquery
+pip3 install --upgrade google-cloud-api
+pip3 install --upgrade google-api-client
+pip3 install --upgrade google-api
+pip3 install --upgrade google-api-python-client
+pip3 install --upgrade google-auth-oauthlib
+pip3 install boto3

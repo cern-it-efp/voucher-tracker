@@ -1,0 +1,11 @@
+google:
+aws:
+  accessKey:
+  secretKey:
+azure:
+exoscale:
+  apiKey:
+  apiSecret:
+voucherify:
+  appId: 
+  appToken:

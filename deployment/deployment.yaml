@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: voucher-tracker-deployment
+spec:
+ replicas: 1
+ selector:
+  matchLabels:
+   name: voucher-tracker-pod
+ template:
+  metadata:
+   labels:
+    name: voucher-tracker-pod
+  spec:
+   containers:
+   - name: voucher-tracker-cont
+     image: ipeluaga/voucher-tracker
+     imagePullPolicy: Always

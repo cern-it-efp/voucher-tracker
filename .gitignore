@@ -1,0 +1,4 @@
+configs.yaml
+src/__pycache__
+src/azure/__pycache__
+logs

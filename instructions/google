@@ -1,0 +1,7 @@
+-Redeem voucher, but do not make consumption
+
+-Enable BigQuery export
+
+-Give tracker admin read permissions on the created dataset (BigQuery Data Viewer)
+
+-Use the voucher

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+daemon=
+
+while [ "$1" != "" ]; do
+  case $1 in
+    --import | -i)
+      shift
+      python3 -u -B src/main.py --import $1
+      exit
+      ;;
+    --daemon | -d)
+      daemon=true
+      ;;
+    * )
+      echo "bad option $1" ; exit 1
+  esac
+  shift
+done
+
+header()
+{
+  echo ""
+  echo "█▀▀ █▀▀ █▀▀█ █▄ █" 　
+  echo "█   █▀▀ █▄▄▀ █ ▀█" 　
+  echo "▀▀▀ ▀▀▀ ▀ ▀▀ ▀  ▀" 　
+  echo " VOUCHER-TRACKER"
+}
+
+if [[ $daemon == true ]]; then
+  header > logs
+  echo "see 'logs' file for logs"
+  python3 -u -B src/main.py &>> logs &
+else
+  header
+  python3 -u -B src/main.py
+fi
