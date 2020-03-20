@@ -1,5 +1,5 @@
 # Voucher Tracker - CERN
 
-Tool to keep track of cloud vouchers.
+Cloud usage and voucher tracking system.
 
 Copyright (C) CERN.
